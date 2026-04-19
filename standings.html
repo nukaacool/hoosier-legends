@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Hoosier Legends Conference (HLC) standings by sport. Live standings available on MaxPreps." />
+    <title>Hoosier Legends Conference | Standings</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-site-header>
+      <nav class="nav" aria-label="Primary">
+        <div class="nav__inner">
+          <a class="brand" href="./index.html" aria-label="Hoosier Legends Conference home">
+            <span class="brand__top">HOOSIER LEGENDS</span>
+            <span class="brand__bottom">CONFERENCE</span>
+          </a>
+
+          <button class="nav__toggle" type="button" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false" data-nav-toggle>
+            <span class="nav__toggle-lines" aria-hidden="true"></span>
+          </button>
+
+          <div class="nav__links" data-desktop-nav>
+            <a class="nav__link" href="./index.html">Home</a>
+            <a class="nav__link" href="./schools.html">Schools</a>
+            <a class="nav__link" href="./standings.html">Standings</a>
+            <a class="nav__link" href="./sports.html">Sports</a>
+            <a class="nav__link" href="./champions.html">Past Champions</a>
+            <a class="nav__link" href="./history.html">History</a>
+            <a class="nav__link" href="./links.html">Links</a>
+            <a class="nav__link" href="./contact.html">Contact</a>
+          </div>
+
+          <div class="nav__tagline" aria-hidden="true">Be Legendary</div>
+        </div>
+      </nav>
+
+      <div class="mobile-menu" id="mobile-menu" data-mobile-menu aria-hidden="true">
+        <div class="mobile-menu__panel" role="dialog" aria-modal="true" aria-label="Menu">
+          <div class="mobile-menu__header">
+            <div class="mobile-menu__title">MENU</div>
+            <button class="mobile-menu__close" type="button" aria-label="Close menu" data-nav-close>Close</button>
+          </div>
+          <div class="mobile-menu__links">
+            <a class="mobile-menu__link" href="./index.html">Home</a>
+            <a class="mobile-menu__link" href="./schools.html">Schools</a>
+            <a class="mobile-menu__link" href="./standings.html">Standings</a>
+            <a class="mobile-menu__link" href="./sports.html">Sports</a>
+            <a class="mobile-menu__link" href="./champions.html">Past Champions</a>
+            <a class="mobile-menu__link" href="./history.html">History</a>
+            <a class="mobile-menu__link" href="./links.html">Links</a>
+            <a class="mobile-menu__link" href="./contact.html">Contact</a>
+          </div>
+          <div class="mobile-menu__footer">
+            <div class="mobile-menu__motto">Be Legendary</div>
+            <div class="mobile-menu__sub">IHSAA Sanctioned • Inaugural 2025–26</div>
+          </div>
+        </div>
+        <button class="mobile-menu__backdrop" type="button" aria-label="Close menu" data-nav-backdrop></button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero">
+        <div class="container">
+          <h1 class="page-title">CONFERENCE STANDINGS</h1>
+          <p class="page-subtitle">Select a sport to view standings</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container" data-tabs>
+          <div class="tabs" role="tablist" aria-label="Sports standings tabs">
+            <button class="tab is-active" type="button" role="tab" aria-selected="true" tabindex="0" data-tab="cross-country">Cross Country</button>
+            <button class="tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-tab="football">Football</button>
+            <button class="tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-tab="volleyball">Volleyball</button>
+            <button class="tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-tab="boys-basketball">Boys Basketball</button>
+            <button class="tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-tab="girls-basketball">Girls Basketball</button>
+            <button class="tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-tab="wrestling">Wrestling</button>
+            <button class="tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-tab="baseball">Baseball</button>
+            <button class="tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-tab="softball">Softball</button>
+            <button class="tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-tab="boys-soccer">Boys Soccer</button>
+            <button class="tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-tab="girls-soccer">Girls Soccer</button>
+            <button class="tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-tab="boys-golf">Boys Golf</button>
+            <button class="tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-tab="girls-golf">Girls Golf</button>
+            <button class="tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-tab="swimming-diving">Swimming &amp; Diving</button>
+            <button class="tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-tab="boys-tennis">Boys Tennis</button>
+            <button class="tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-tab="girls-tennis">Girls Tennis</button>
+            <button class="tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-tab="track-field">Track &amp; Field</button>
+          </div>
+
+          <div class="tabpanels" aria-live="polite">
+            <section class="panel is-active" data-panel="cross-country" aria-hidden="false">
+              <div class="panel__top">
+                <h2 class="panel__title">Cross Country</h2>
+                <a class="btn-link" href="https://www.maxpreps.com/in/cross-country/conference/hoosier-legends/" target="_blank" rel="noopener noreferrer">View Live Standings on MaxPreps →</a>
+              </div>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>School</th>
+                      <th>Conference W</th>
+                      <th>Conference L</th>
+                      <th>Overall W</th>
+                      <th>Overall L</th>
+                      <th>PCT</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="is-leader"><td>Beech Grove</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Indian Creek</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Monrovia</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Speedway</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Tri-West</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Triton Central</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Greenwood</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Shelbyville</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="panel" data-panel="football" aria-hidden="true">
+              <div class="panel__top">
+                <h2 class="panel__title">Football</h2>
+                <a class="btn-link" href="https://www.maxpreps.com/in/football/conference/hoosier-legends/" target="_blank" rel="noopener noreferrer">View Live Standings on MaxPreps →</a>
+              </div>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>School</th>
+                      <th>Conference W</th>
+                      <th>Conference L</th>
+                      <th>Overall W</th>
+                      <th>Overall L</th>
+                      <th>PCT</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="is-leader"><td>Beech Grove</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Indian Creek</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Monrovia</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Speedway</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Tri-West</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Triton Central</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Greenwood</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Shelbyville</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="panel" data-panel="volleyball" aria-hidden="true">
+              <div class="panel__top">
+                <h2 class="panel__title">Volleyball</h2>
+                <a class="btn-link" href="https://www.maxpreps.com/in/volleyball/conference/hoosier-legends/" target="_blank" rel="noopener noreferrer">View Live Standings on MaxPreps →</a>
+              </div>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>School</th>
+                      <th>Conference W</th>
+                      <th>Conference L</th>
+                      <th>Overall W</th>
+                      <th>Overall L</th>
+                      <th>PCT</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="is-leader"><td>Beech Grove</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Indian Creek</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Monrovia</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Speedway</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Tri-West</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Triton Central</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Greenwood</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Shelbyville</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="panel" data-panel="boys-basketball" aria-hidden="true">
+              <div class="panel__top">
+                <h2 class="panel__title">Boys Basketball</h2>
+                <a class="btn-link" href="https://www.maxpreps.com/in/basketball/conference/hoosier-legends/" target="_blank" rel="noopener noreferrer">View Live Standings on MaxPreps →</a>
+              </div>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>School</th>
+                      <th>Conference W</th>
+                      <th>Conference L</th>
+                      <th>Overall W</th>
+                      <th>Overall L</th>
+                      <th>PCT</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="is-leader"><td>Beech Grove</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Indian Creek</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Monrovia</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Speedway</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Tri-West</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Triton Central</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Greenwood</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Shelbyville</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="panel" data-panel="girls-basketball" aria-hidden="true">
+              <div class="panel__top">
+                <h2 class="panel__title">Girls Basketball</h2>
+                <a class="btn-link" href="https://www.maxpreps.com/in/basketball/conference/hoosier-legends/" target="_blank" rel="noopener noreferrer">View Live Standings on MaxPreps →</a>
+              </div>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>School</th>
+                      <th>Conference W</th>
+                      <th>Conference L</th>
+                      <th>Overall W</th>
+                      <th>Overall L</th>
+                      <th>PCT</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="is-leader"><td>Beech Grove</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Indian Creek</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Monrovia</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Speedway</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Tri-West</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Triton Central</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Greenwood</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Shelbyville</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="panel" data-panel="wrestling" aria-hidden="true">
+              <div class="panel__top">
+                <h2 class="panel__title">Wrestling</h2>
+                <a class="btn-link" href="https://www.maxpreps.com/in/wrestling/conference/hoosier-legends/" target="_blank" rel="noopener noreferrer">View Live Standings on MaxPreps →</a>
+              </div>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>School</th>
+                      <th>Conference W</th>
+                      <th>Conference L</th>
+                      <th>Overall W</th>
+                      <th>Overall L</th>
+                      <th>PCT</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="is-leader"><td>Beech Grove</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Indian Creek</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Monrovia</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Speedway</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Tri-West</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Triton Central</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Greenwood</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Shelbyville</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="panel" data-panel="baseball" aria-hidden="true">
+              <div class="panel__top">
+                <h2 class="panel__title">Baseball</h2>
+                <a class="btn-link" href="https://www.maxpreps.com/in/baseball/conference/hoosier-legends/" target="_blank" rel="noopener noreferrer">View Live Standings on MaxPreps →</a>
+              </div>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>School</th>
+                      <th>Conference W</th>
+                      <th>Conference L</th>
+                      <th>Overall W</th>
+                      <th>Overall L</th>
+                      <th>PCT</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="is-leader"><td>Beech Grove</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Indian Creek</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Monrovia</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Speedway</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Tri-West</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Triton Central</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Greenwood</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Shelbyville</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="panel" data-panel="softball" aria-hidden="true">
+              <div class="panel__top">
+                <h2 class="panel__title">Softball</h2>
+                <a class="btn-link" href="https://www.maxpreps.com/in/softball/conference/hoosier-legends/" target="_blank" rel="noopener noreferrer">View Live Standings on MaxPreps →</a>
+              </div>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>School</th>
+                      <th>Conference W</th>
+                      <th>Conference L</th>
+                      <th>Overall W</th>
+                      <th>Overall L</th>
+                      <th>PCT</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="is-leader"><td>Beech Grove</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Indian Creek</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Monrovia</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Speedway</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Tri-West</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Triton Central</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Greenwood</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Shelbyville</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="panel" data-panel="boys-soccer" aria-hidden="true">
+              <div class="panel__top">
+                <h2 class="panel__title">Boys Soccer</h2>
+                <a class="btn-link" href="https://www.maxpreps.com/in/soccer/conference/hoosier-legends/" target="_blank" rel="noopener noreferrer">View Live Standings on MaxPreps →</a>
+              </div>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>School</th>
+                      <th>Conference W</th>
+                      <th>Conference L</th>
+                      <th>Overall W</th>
+                      <th>Overall L</th>
+                      <th>PCT</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="is-leader"><td>Beech Grove</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Indian Creek</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Monrovia</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Speedway</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Tri-West</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Triton Central</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Greenwood</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Shelbyville</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="panel" data-panel="girls-soccer" aria-hidden="true">
+              <div class="panel__top">
+                <h2 class="panel__title">Girls Soccer</h2>
+                <a class="btn-link" href="https://www.maxpreps.com/in/soccer/conference/hoosier-legends/" target="_blank" rel="noopener noreferrer">View Live Standings on MaxPreps →</a>
+              </div>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>School</th>
+                      <th>Conference W</th>
+                      <th>Conference L</th>
+                      <th>Overall W</th>
+                      <th>Overall L</th>
+                      <th>PCT</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="is-leader"><td>Beech Grove</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Indian Creek</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Monrovia</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Speedway</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Tri-West</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Triton Central</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Greenwood</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Shelbyville</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="panel" data-panel="boys-golf" aria-hidden="true">
+              <div class="panel__top">
+                <h2 class="panel__title">Boys Golf</h2>
+                <a class="btn-link" href="https://www.maxpreps.com/in/golf/conference/hoosier-legends/" target="_blank" rel="noopener noreferrer">View Live Standings on MaxPreps →</a>
+              </div>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>School</th>
+                      <th>Conference W</th>
+                      <th>Conference L</th>
+                      <th>Overall W</th>
+                      <th>Overall L</th>
+                      <th>PCT</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="is-leader"><td>Beech Grove</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Indian Creek</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Monrovia</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Speedway</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Tri-West</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Triton Central</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Greenwood</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Shelbyville</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="panel" data-panel="girls-golf" aria-hidden="true">
+              <div class="panel__top">
+                <h2 class="panel__title">Girls Golf</h2>
+                <a class="btn-link" href="https://www.maxpreps.com/in/golf/conference/hoosier-legends/" target="_blank" rel="noopener noreferrer">View Live Standings on MaxPreps →</a>
+              </div>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>School</th>
+                      <th>Conference W</th>
+                      <th>Conference L</th>
+                      <th>Overall W</th>
+                      <th>Overall L</th>
+                      <th>PCT</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="is-leader"><td>Beech Grove</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Indian Creek</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Monrovia</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Speedway</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Tri-West</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Triton Central</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Greenwood</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Shelbyville</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="panel" data-panel="swimming-diving" aria-hidden="true">
+              <div class="panel__top">
+                <h2 class="panel__title">Swimming &amp; Diving</h2>
+                <a class="btn-link" href="https://www.maxpreps.com/in/swimming-diving/conference/hoosier-legends/" target="_blank" rel="noopener noreferrer">View Live Standings on MaxPreps →</a>
+              </div>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>School</th>
+                      <th>Conference W</th>
+                      <th>Conference L</th>
+                      <th>Overall W</th>
+                      <th>Overall L</th>
+                      <th>PCT</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="is-leader"><td>Beech Grove</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Indian Creek</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Monrovia</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Speedway</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Tri-West</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Triton Central</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Greenwood</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Shelbyville</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="panel" data-panel="boys-tennis" aria-hidden="true">
+              <div class="panel__top">
+                <h2 class="panel__title">Boys Tennis</h2>
+                <a class="btn-link" href="https://www.maxpreps.com/in/tennis/conference/hoosier-legends/" target="_blank" rel="noopener noreferrer">View Live Standings on MaxPreps →</a>
+              </div>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>School</th>
+                      <th>Conference W</th>
+                      <th>Conference L</th>
+                      <th>Overall W</th>
+                      <th>Overall L</th>
+                      <th>PCT</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="is-leader"><td>Beech Grove</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Indian Creek</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Monrovia</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Speedway</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Tri-West</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Triton Central</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Greenwood</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Shelbyville</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="panel" data-panel="girls-tennis" aria-hidden="true">
+              <div class="panel__top">
+                <h2 class="panel__title">Girls Tennis</h2>
+                <a class="btn-link" href="https://www.maxpreps.com/in/tennis/conference/hoosier-legends/" target="_blank" rel="noopener noreferrer">View Live Standings on MaxPreps →</a>
+              </div>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>School</th>
+                      <th>Conference W</th>
+                      <th>Conference L</th>
+                      <th>Overall W</th>
+                      <th>Overall L</th>
+                      <th>PCT</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="is-leader"><td>Beech Grove</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Indian Creek</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Monrovia</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Speedway</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Tri-West</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Triton Central</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Greenwood</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Shelbyville</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="panel" data-panel="track-field" aria-hidden="true">
+              <div class="panel__top">
+                <h2 class="panel__title">Track &amp; Field</h2>
+                <a class="btn-link" href="https://www.maxpreps.com/in/track-field/conference/hoosier-legends/" target="_blank" rel="noopener noreferrer">View Live Standings on MaxPreps →</a>
+              </div>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>School</th>
+                      <th>Conference W</th>
+                      <th>Conference L</th>
+                      <th>Overall W</th>
+                      <th>Overall L</th>
+                      <th>PCT</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="is-leader"><td>Beech Grove</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Indian Creek</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Monrovia</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Speedway</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Tri-West</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Triton Central</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Greenwood</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                    <tr><td>Shelbyville</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="pct">.000</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" aria-label="Site footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <div class="brand brand--footer" aria-label="Hoosier Legends Conference">
+              <span class="brand__top">HOOSIER LEGENDS</span>
+              <span class="brand__bottom">CONFERENCE</span>
+            </div>
+            <div class="footer__motto">Be Legendary</div>
+            <div class="footer__est">Est. 2025</div>
+          </div>
+
+          <nav class="footer__nav" aria-label="Quick links">
+            <div class="footer__title">Quick Links</div>
+            <a class="footer__link" href="./index.html">Home</a>
+            <a class="footer__link" href="./schools.html">Schools</a>
+            <a class="footer__link" href="./standings.html">Standings</a>
+            <a class="footer__link" href="./sports.html">Sports</a>
+            <a class="footer__link" href="./champions.html">Past Champions</a>
+            <a class="footer__link" href="./history.html">History</a>
+            <a class="footer__link" href="./links.html">Links</a>
+            <a class="footer__link" href="./contact.html">Contact</a>
+          </nav>
+
+          <div class="footer__follow">
+            <div class="footer__title">Follow the HLC</div>
+            <a class="footer__link" href="https://x.com/HLCWeeklyPod" target="_blank" rel="noopener noreferrer">@HLCWeeklyPod</a>
+            <div class="footer__small">Conference news and updates.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="container">
+          © 2025-26 Hoosier Legends Conference | IHSAA Sanctioned
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
+

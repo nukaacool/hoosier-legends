@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Sports sponsored by the Hoosier Legends Conference (HLC). Filter by season." />
+    <title>Hoosier Legends Conference | Sports</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-site-header>
+      <nav class="nav" aria-label="Primary">
+        <div class="nav__inner">
+          <a class="brand" href="./index.html" aria-label="Hoosier Legends Conference home">
+            <span class="brand__top">HOOSIER LEGENDS</span>
+            <span class="brand__bottom">CONFERENCE</span>
+          </a>
+
+          <button class="nav__toggle" type="button" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false" data-nav-toggle>
+            <span class="nav__toggle-lines" aria-hidden="true"></span>
+          </button>
+
+          <div class="nav__links" data-desktop-nav>
+            <a class="nav__link" href="./index.html">Home</a>
+            <a class="nav__link" href="./schools.html">Schools</a>
+            <a class="nav__link" href="./standings.html">Standings</a>
+            <a class="nav__link" href="./sports.html">Sports</a>
+            <a class="nav__link" href="./champions.html">Past Champions</a>
+            <a class="nav__link" href="./history.html">History</a>
+            <a class="nav__link" href="./links.html">Links</a>
+            <a class="nav__link" href="./contact.html">Contact</a>
+          </div>
+
+          <div class="nav__tagline" aria-hidden="true">Be Legendary</div>
+        </div>
+      </nav>
+
+      <div class="mobile-menu" id="mobile-menu" data-mobile-menu aria-hidden="true">
+        <div class="mobile-menu__panel" role="dialog" aria-modal="true" aria-label="Menu">
+          <div class="mobile-menu__header">
+            <div class="mobile-menu__title">MENU</div>
+            <button class="mobile-menu__close" type="button" aria-label="Close menu" data-nav-close>Close</button>
+          </div>
+          <div class="mobile-menu__links">
+            <a class="mobile-menu__link" href="./index.html">Home</a>
+            <a class="mobile-menu__link" href="./schools.html">Schools</a>
+            <a class="mobile-menu__link" href="./standings.html">Standings</a>
+            <a class="mobile-menu__link" href="./sports.html">Sports</a>
+            <a class="mobile-menu__link" href="./champions.html">Past Champions</a>
+            <a class="mobile-menu__link" href="./history.html">History</a>
+            <a class="mobile-menu__link" href="./links.html">Links</a>
+            <a class="mobile-menu__link" href="./contact.html">Contact</a>
+          </div>
+          <div class="mobile-menu__footer">
+            <div class="mobile-menu__motto">Be Legendary</div>
+            <div class="mobile-menu__sub">IHSAA Sanctioned • Inaugural 2025–26</div>
+          </div>
+        </div>
+        <button class="mobile-menu__backdrop" type="button" aria-label="Close menu" data-nav-backdrop></button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero">
+        <div class="container">
+          <h1 class="page-title">CONFERENCE SPORTS</h1>
+          <p class="page-subtitle">Filter by season • Tap a sport for standings</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container" data-filters>
+          <div class="filters" aria-label="Season filters">
+            <button class="filter-btn is-active" type="button" data-filter="ALL">ALL</button>
+            <button class="filter-btn" type="button" data-filter="FALL">FALL</button>
+            <button class="filter-btn" type="button" data-filter="WINTER">WINTER</button>
+            <button class="filter-btn" type="button" data-filter="SPRING">SPRING</button>
+          </div>
+
+          <div class="sport-grid">
+            <a class="sport-card" href="./standings.html#football" data-sport-card data-season="FALL">
+              <div class="sport-card__top">
+                <div class="sport-card__emoji" aria-hidden="true">🏈</div>
+                <span class="season-badge season-badge--fall">Fall</span>
+              </div>
+              <h2 class="sport-card__name">Football</h2>
+              <div class="sport-card__meta">2025–26 Champion: TBD</div>
+            </a>
+            <a class="sport-card" href="./standings.html#volleyball" data-sport-card data-season="FALL">
+              <div class="sport-card__top">
+                <div class="sport-card__emoji" aria-hidden="true">🏐</div>
+                <span class="season-badge season-badge--fall">Fall</span>
+              </div>
+              <h2 class="sport-card__name">Volleyball</h2>
+              <div class="sport-card__meta">2025–26 Champion: TBD</div>
+            </a>
+            <a class="sport-card" href="./standings.html#boys-soccer" data-sport-card data-season="FALL">
+              <div class="sport-card__top">
+                <div class="sport-card__emoji" aria-hidden="true">⚽</div>
+                <span class="season-badge season-badge--fall">Fall</span>
+              </div>
+              <h2 class="sport-card__name">Boys Soccer</h2>
+              <div class="sport-card__meta">2025–26 Champion: TBD</div>
+            </a>
+            <a class="sport-card" href="./standings.html#girls-soccer" data-sport-card data-season="FALL">
+              <div class="sport-card__top">
+                <div class="sport-card__emoji" aria-hidden="true">⚽</div>
+                <span class="season-badge season-badge--fall">Fall</span>
+              </div>
+              <h2 class="sport-card__name">Girls Soccer</h2>
+              <div class="sport-card__meta">2025–26 Champion: TBD</div>
+            </a>
+            <a class="sport-card" href="./standings.html#cross-country" data-sport-card data-season="FALL">
+              <div class="sport-card__top">
+                <div class="sport-card__emoji" aria-hidden="true">🏃</div>
+                <span class="season-badge season-badge--fall">Fall</span>
+              </div>
+              <h2 class="sport-card__name">Boys Cross Country</h2>
+              <div class="sport-card__meta">2025–26 Champion: TBD</div>
+            </a>
+            <a class="sport-card" href="./standings.html#cross-country" data-sport-card data-season="FALL">
+              <div class="sport-card__top">
+                <div class="sport-card__emoji" aria-hidden="true">🏃</div>
+                <span class="season-badge season-badge--fall">Fall</span>
+              </div>
+              <h2 class="sport-card__name">Girls Cross Country</h2>
+              <div class="sport-card__meta">2025–26 Champion: TBD</div>
+            </a>
+            <a class="sport-card" href="./standings.html#boys-golf" data-sport-card data-season="FALL">
+              <div class="sport-card__top">
+                <div class="sport-card__emoji" aria-hidden="true">⛳</div>
+                <span class="season-badge season-badge--fall">Fall</span>
+              </div>
+              <h2 class="sport-card__name">Boys Golf</h2>
+              <div class="sport-card__meta">2025–26 Champion: TBD</div>
+            </a>
+            <a class="sport-card" href="./standings.html#girls-golf" data-sport-card data-season="FALL">
+              <div class="sport-card__top">
+                <div class="sport-card__emoji" aria-hidden="true">⛳</div>
+                <span class="season-badge season-badge--fall">Fall</span>
+              </div>
+              <h2 class="sport-card__name">Girls Golf</h2>
+              <div class="sport-card__meta">2025–26 Champion: TBD</div>
+            </a>
+
+            <a class="sport-card" href="./standings.html#boys-basketball" data-sport-card data-season="WINTER">
+              <div class="sport-card__top">
+                <div class="sport-card__emoji" aria-hidden="true">🏀</div>
+                <span class="season-badge season-badge--winter">Winter</span>
+              </div>
+              <h2 class="sport-card__name">Boys Basketball</h2>
+              <div class="sport-card__meta">2025–26 Champion: TBD</div>
+            </a>
+            <a class="sport-card" href="./standings.html#girls-basketball" data-sport-card data-season="WINTER">
+              <div class="sport-card__top">
+                <div class="sport-card__emoji" aria-hidden="true">🏀</div>
+                <span class="season-badge season-badge--winter">Winter</span>
+              </div>
+              <h2 class="sport-card__name">Girls Basketball</h2>
+              <div class="sport-card__meta">2025–26 Champion: TBD</div>
+            </a>
+            <a class="sport-card" href="./standings.html#swimming-diving" data-sport-card data-season="WINTER">
+              <div class="sport-card__top">
+                <div class="sport-card__emoji" aria-hidden="true">🏊</div>
+                <span class="season-badge season-badge--winter">Winter</span>
+              </div>
+              <h2 class="sport-card__name">Swimming &amp; Diving</h2>
+              <div class="sport-card__meta">2025–26 Champion: TBD</div>
+            </a>
+            <a class="sport-card" href="./standings.html#wrestling" data-sport-card data-season="WINTER">
+              <div class="sport-card__top">
+                <div class="sport-card__emoji" aria-hidden="true">🤼</div>
+                <span class="season-badge season-badge--winter">Winter</span>
+              </div>
+              <h2 class="sport-card__name">Wrestling</h2>
+              <div class="sport-card__meta">2025–26 Champion: TBD</div>
+            </a>
+
+            <a class="sport-card" href="./standings.html#baseball" data-sport-card data-season="SPRING">
+              <div class="sport-card__top">
+                <div class="sport-card__emoji" aria-hidden="true">⚾</div>
+                <span class="season-badge season-badge--spring">Spring</span>
+              </div>
+              <h2 class="sport-card__name">Baseball</h2>
+              <div class="sport-card__meta">2025–26 Champion: TBD</div>
+            </a>
+            <a class="sport-card" href="./standings.html#softball" data-sport-card data-season="SPRING">
+              <div class="sport-card__top">
+                <div class="sport-card__emoji" aria-hidden="true">🥎</div>
+                <span class="season-badge season-badge--spring">Spring</span>
+              </div>
+              <h2 class="sport-card__name">Softball</h2>
+              <div class="sport-card__meta">2025–26 Champion: TBD</div>
+            </a>
+            <a class="sport-card" href="./standings.html#boys-tennis" data-sport-card data-season="SPRING">
+              <div class="sport-card__top">
+                <div class="sport-card__emoji" aria-hidden="true">🎾</div>
+                <span class="season-badge season-badge--spring">Spring</span>
+              </div>
+              <h2 class="sport-card__name">Boys Tennis</h2>
+              <div class="sport-card__meta">2025–26 Champion: TBD</div>
+            </a>
+            <a class="sport-card" href="./standings.html#girls-tennis" data-sport-card data-season="SPRING">
+              <div class="sport-card__top">
+                <div class="sport-card__emoji" aria-hidden="true">🎾</div>
+                <span class="season-badge season-badge--spring">Spring</span>
+              </div>
+              <h2 class="sport-card__name">Girls Tennis</h2>
+              <div class="sport-card__meta">2025–26 Champion: TBD</div>
+            </a>
+            <a class="sport-card" href="./standings.html#track-field" data-sport-card data-season="SPRING">
+              <div class="sport-card__top">
+                <div class="sport-card__emoji" aria-hidden="true">🏟️</div>
+                <span class="season-badge season-badge--spring">Spring</span>
+              </div>
+              <h2 class="sport-card__name">Track &amp; Field</h2>
+              <div class="sport-card__meta">2025–26 Champion: TBD</div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" aria-label="Site footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <div class="brand brand--footer" aria-label="Hoosier Legends Conference">
+              <span class="brand__top">HOOSIER LEGENDS</span>
+              <span class="brand__bottom">CONFERENCE</span>
+            </div>
+            <div class="footer__motto">Be Legendary</div>
+            <div class="footer__est">Est. 2025</div>
+          </div>
+
+          <nav class="footer__nav" aria-label="Quick links">
+            <div class="footer__title">Quick Links</div>
+            <a class="footer__link" href="./index.html">Home</a>
+            <a class="footer__link" href="./schools.html">Schools</a>
+            <a class="footer__link" href="./standings.html">Standings</a>
+            <a class="footer__link" href="./sports.html">Sports</a>
+            <a class="footer__link" href="./champions.html">Past Champions</a>
+            <a class="footer__link" href="./history.html">History</a>
+            <a class="footer__link" href="./links.html">Links</a>
+            <a class="footer__link" href="./contact.html">Contact</a>
+          </nav>
+
+          <div class="footer__follow">
+            <div class="footer__title">Follow the HLC</div>
+            <a class="footer__link" href="https://x.com/HLCWeeklyPod" target="_blank" rel="noopener noreferrer">@HLCWeeklyPod</a>
+            <div class="footer__small">Conference news and updates.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="container">
+          © 2025-26 Hoosier Legends Conference | IHSAA Sanctioned
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
+
