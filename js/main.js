@@ -159,6 +159,83 @@
     buttons.forEach((b) => b.addEventListener("click", () => apply(b.getAttribute("data-filter"))));
   }
 
+  // Member school logos
+  const schoolLogos = [
+    ["beech-grove", "Beech Grove Hornets", "beech-grove-hornets.jpg"],
+    ["indian-creek", "Indian Creek Braves", "indian-creek-braves.jpg"],
+    ["monrovia", "Monrovia Bulldogs", "monrovia-bulldogs.jpg"],
+    ["speedway", "Speedway Sparkplugs", "speedway-sparkplugs.jpg"],
+    ["tri-west", "Tri-West Bruins", "tri-west-bruins.jpg"],
+    ["triton-central", "Triton Central Tigers", "triton-central-tigers.jpg"],
+    ["greenwood", "Greenwood Woodmen", "greenwood-woodmen.jpg"],
+    ["shelbyville", "Shelbyville Golden Bears", "shelbyville-golden-bears.jpg"],
+  ];
+
+  if (schoolLogos.length) {
+    const style = document.createElement("style");
+    style.textContent = `
+      .badge-card.has-logo {
+        min-height: 92px;
+        padding: 12px 14px;
+        display: grid;
+        grid-template-columns: 58px 1fr;
+        align-items: center;
+        gap: 12px;
+      }
+      .badge-card__logo {
+        width: 58px;
+        height: 58px;
+        object-fit: contain;
+        border-radius: 14px;
+        background: var(--color-white);
+        padding: 7px;
+      }
+      .school-logo {
+        height: 132px;
+        border-radius: var(--radius-md);
+        border: 1px solid var(--color-border);
+        background: linear-gradient(180deg, rgba(245, 245, 245, 0.96), rgba(232, 232, 232, 0.88));
+        display: grid;
+        place-items: center;
+        padding: 16px;
+        margin-bottom: 16px;
+      }
+      .school-logo img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    `;
+    document.head.appendChild(style);
+
+    schoolLogos.forEach(([id, label, file]) => {
+      const src = `./assets/logos/${file}`;
+
+      qsa(`.badge-card[href="./schools.html#${id}"]`).forEach((card) => {
+        if (qs(".badge-card__logo", card)) return;
+        card.classList.add("has-logo");
+        const img = document.createElement("img");
+        img.className = "badge-card__logo";
+        img.src = src;
+        img.alt = "";
+        img.loading = "lazy";
+        card.prepend(img);
+      });
+
+      const schoolCard = qs(`article.card#${id}`);
+      if (schoolCard && !qs(".school-logo", schoolCard)) {
+        const frame = document.createElement("div");
+        frame.className = "school-logo";
+        const img = document.createElement("img");
+        img.src = src;
+        img.alt = `${label} logo`;
+        img.loading = "lazy";
+        frame.appendChild(img);
+        schoolCard.prepend(frame);
+      }
+    });
+  }
+
   // Contact form validation
   const form = qs("[data-contact-form]");
   if (form) {
@@ -203,4 +280,3 @@
     });
   }
 })();
-
