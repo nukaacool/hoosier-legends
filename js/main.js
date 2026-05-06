@@ -200,6 +200,25 @@
         padding: 16px;
         margin-bottom: 16px;
       }
+      .school--beech-grove .badge-card__logo,
+      .school--monrovia .badge-card__logo,
+      .school--speedway .badge-card__logo,
+      .school--tri-west .badge-card__logo,
+      .school--shelbyville .badge-card__logo,
+      .school--beech-grove .school-logo,
+      .school--monrovia .school-logo,
+      .school--speedway .school-logo,
+      .school--tri-west .school-logo,
+      .school--shelbyville .school-logo {
+        background: var(--school-primary);
+        border-color: var(--school-secondary);
+      }
+      .school--beech-grove .badge-card__logo,
+      .school--beech-grove .school-logo,
+      .school--shelbyville .badge-card__logo,
+      .school--shelbyville .school-logo {
+        background: #111111;
+      }
       .school-logo img {
         width: 100%;
         height: 100%;
