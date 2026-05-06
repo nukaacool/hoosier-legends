@@ -175,36 +175,40 @@
     const style = document.createElement("style");
     style.textContent = `
       .badge-card.has-logo {
-        min-height: 92px;
-        padding: 12px 14px;
+        min-height: 96px;
+        padding: 12px 16px;
         display: grid;
-        grid-template-columns: 58px 1fr;
+        grid-template-columns: 74px 1fr;
         align-items: center;
-        gap: 12px;
+        gap: 14px;
       }
       .badge-card__logo {
-        width: 58px;
-        height: 58px;
+        width: 74px;
+        height: 68px;
         object-fit: contain;
-        border-radius: 14px;
-        background: var(--color-white);
-        padding: 7px;
+        border-radius: 0;
+        background: transparent;
+        padding: 0;
+        filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.35));
       }
       .school-logo {
-        height: 132px;
+        height: 172px;
         border-radius: var(--radius-md);
         border: 1px solid var(--color-border);
         background: linear-gradient(180deg, rgba(245, 245, 245, 0.96), rgba(232, 232, 232, 0.88));
         display: grid;
         place-items: center;
-        padding: 16px;
-        margin-bottom: 16px;
+        padding: 18px;
+        margin-bottom: 22px;
+        overflow: hidden;
       }
       .school--beech-grove .badge-card__logo,
       .school--monrovia .badge-card__logo,
       .school--speedway .badge-card__logo,
       .school--tri-west .badge-card__logo,
-      .school--shelbyville .badge-card__logo,
+      .school--shelbyville .badge-card__logo {
+        background: transparent;
+      }
       .school--beech-grove .school-logo,
       .school--monrovia .school-logo,
       .school--speedway .school-logo,
@@ -213,15 +217,18 @@
         background: var(--school-primary);
         border-color: var(--school-secondary);
       }
-      .school--beech-grove .badge-card__logo,
       .school--beech-grove .school-logo,
-      .school--shelbyville .badge-card__logo,
       .school--shelbyville .school-logo {
         background: #111111;
       }
+      .school--tri-west .school-logo {
+        background: var(--school-secondary);
+      }
       .school-logo img {
-        width: 100%;
-        height: 100%;
+        width: auto;
+        height: auto;
+        max-width: 82%;
+        max-height: 116px;
         object-fit: contain;
       }
     `;
