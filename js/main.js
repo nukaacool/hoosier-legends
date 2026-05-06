@@ -161,14 +161,14 @@
 
   // Member school logos
   const schoolLogos = [
-    ["beech-grove", "Beech Grove Hornets", "beech-grove-hornets.jpg"],
-    ["indian-creek", "Indian Creek Braves", "indian-creek-braves.jpg"],
-    ["monrovia", "Monrovia Bulldogs", "monrovia-bulldogs.jpg"],
-    ["speedway", "Speedway Sparkplugs", "speedway-sparkplugs.jpg"],
-    ["tri-west", "Tri-West Bruins", "tri-west-bruins.jpg"],
-    ["triton-central", "Triton Central Tigers", "triton-central-tigers.jpg"],
-    ["greenwood", "Greenwood Woodmen", "greenwood-woodmen.jpg"],
-    ["shelbyville", "Shelbyville Golden Bears", "shelbyville-golden-bears.jpg"],
+    ["beech-grove", "Beech Grove Hornets", "beech-grove-hornets.png"],
+    ["indian-creek", "Indian Creek Braves", "indian-creek-braves.png"],
+    ["monrovia", "Monrovia Bulldogs", "monrovia-bulldogs.png"],
+    ["speedway", "Speedway Sparkplugs", "speedway-sparkplugs.png"],
+    ["tri-west", "Tri-West Bruins", "tri-west-bruins.png"],
+    ["triton-central", "Triton Central Tigers", "triton-central-tigers.png"],
+    ["greenwood", "Greenwood Woodmen", "greenwood-woodmen.png"],
+    ["shelbyville", "Shelbyville Golden Bears", "shelbyville-golden-bears.png"],
   ];
 
   if (schoolLogos.length) {
