@@ -25,6 +25,71 @@
   --nav-h: 72px;
 }
 
+/* School palettes */
+.school--beech-grove {
+  --school-primary: #0a0a0a;
+  --school-secondary: #f58220;
+  --school-ink: #ffffff;
+  --school-button-ink: #0a0a0a;
+  --school-muted: #ffd9b3;
+}
+
+.school--indian-creek {
+  --school-primary: #003da5;
+  --school-secondary: #c8102e;
+  --school-ink: #ffffff;
+  --school-button-ink: #ffffff;
+  --school-muted: #d9e8ff;
+}
+
+.school--monrovia {
+  --school-primary: #0b4f2f;
+  --school-secondary: #ffffff;
+  --school-ink: #ffffff;
+  --school-button-ink: #0b4f2f;
+  --school-muted: #d8f4e1;
+}
+
+.school--speedway {
+  --school-primary: #5a321f;
+  --school-secondary: #ffb71b;
+  --school-ink: #ffffff;
+  --school-button-ink: #5a321f;
+  --school-muted: #ffe1a3;
+}
+
+.school--tri-west {
+  --school-primary: #002f6c;
+  --school-secondary: #c7a34a;
+  --school-ink: #ffffff;
+  --school-button-ink: #002f6c;
+  --school-muted: #d8e8ff;
+}
+
+.school--triton-central {
+  --school-primary: #00843d;
+  --school-secondary: #ffffff;
+  --school-ink: #ffffff;
+  --school-button-ink: #00843d;
+  --school-muted: #d6f3e2;
+}
+
+.school--greenwood {
+  --school-primary: #004b23;
+  --school-secondary: #d4af37;
+  --school-ink: #ffffff;
+  --school-button-ink: #004b23;
+  --school-muted: #d6efdf;
+}
+
+.school--shelbyville {
+  --school-primary: #0b0b0b;
+  --school-secondary: #c99a2e;
+  --school-ink: #ffffff;
+  --school-button-ink: #0b0b0b;
+  --school-muted: #f1d993;
+}
+
 *,
 *::before,
 *::after {
@@ -544,10 +609,20 @@ main {
   transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
+.badge-card[class*="school--"] {
+  background:
+    linear-gradient(135deg, var(--school-primary) 0%, var(--school-primary) 58%, rgba(10, 10, 10, 0.94) 100%);
+  border-color: var(--school-secondary);
+}
+
 .badge-card:hover {
   border-color: var(--color-silver);
   box-shadow: var(--shadow-glow);
   transform: translateY(-2px);
+}
+
+.badge-card[class*="school--"]:hover {
+  border-color: var(--school-secondary);
 }
 
 .badge-card__school {
@@ -557,9 +632,17 @@ main {
   color: var(--color-white);
 }
 
+.badge-card[class*="school--"] .badge-card__school {
+  color: var(--school-ink);
+}
+
 .badge-card__mascot {
   margin-top: 6px;
   color: var(--color-muted);
+}
+
+.badge-card[class*="school--"] .badge-card__mascot {
+  color: var(--school-muted);
 }
 
 .badge-card--spacer {
@@ -818,10 +901,31 @@ main {
   transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
+.card[class*="school--"] {
+  position: relative;
+  overflow: hidden;
+  border-color: var(--school-secondary);
+  background:
+    linear-gradient(145deg, var(--school-primary) 0%, rgba(20, 20, 20, 0.92) 76%),
+    rgba(20, 20, 20, 0.65);
+}
+
+.card[class*="school--"]::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 6px;
+  background: var(--school-secondary);
+}
+
 .card:hover {
   transform: translateY(-4px);
   border-color: var(--color-silver);
   box-shadow: var(--shadow-glow);
+}
+
+.card[class*="school--"]:hover {
+  border-color: var(--school-secondary);
 }
 
 .card__title {
@@ -832,12 +936,20 @@ main {
   margin: 0;
 }
 
+.card[class*="school--"] .card__title {
+  color: var(--school-ink);
+}
+
 .card__subtitle {
   font-family: var(--font-sub);
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--color-gold);
   margin: 6px 0 0;
+}
+
+.card[class*="school--"] .card__subtitle {
+  color: var(--school-muted);
 }
 
 .card__meta {
@@ -847,11 +959,20 @@ main {
   gap: 6px;
 }
 
+.card[class*="school--"] .card__meta,
+.card[class*="school--"] .muted {
+  color: var(--school-muted);
+}
+
 .divider {
   height: 1px;
   background: var(--color-silver);
   opacity: 0.7;
   margin: 14px 0 14px;
+}
+
+.card[class*="school--"] .divider {
+  background: var(--school-secondary);
 }
 
 .card__actions {
@@ -882,6 +1003,18 @@ main {
   box-shadow: var(--shadow-glow);
 }
 
+.card[class*="school--"] .btn-link {
+  border-color: var(--school-secondary);
+  color: var(--school-ink);
+  background: rgba(0, 0, 0, 0.16);
+}
+
+.card[class*="school--"] .btn-link:hover {
+  background: var(--school-secondary);
+  color: var(--school-button-ink);
+  border-color: var(--school-secondary);
+}
+
 .icon-row {
   display: flex;
   gap: 10px;
@@ -906,6 +1039,18 @@ main {
   border-color: var(--color-silver);
   color: var(--color-silver-bright);
   box-shadow: var(--shadow-glow);
+}
+
+.card[class*="school--"] .icon-btn {
+  border-color: var(--school-secondary);
+  color: var(--school-ink);
+  background: rgba(0, 0, 0, 0.16);
+}
+
+.card[class*="school--"] .icon-btn:hover {
+  border-color: var(--school-secondary);
+  color: var(--school-button-ink);
+  background: var(--school-secondary);
 }
 
 .icon-btn svg {
